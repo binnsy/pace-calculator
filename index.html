@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Pace Calculator</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,6 +12,68 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+
+      <div id="displayDate"></div>
+      <div id="displayTime"></div>
+      <div id="displayGreeting"></div>
+      <div id="displayCountdown"></div>
+
+
+
+<div id="userCountdown">
+      <form id="userCountdown">
+      <input type="text" class="userEvent" name="userEvent" placeholder="event title" required>
+      <input type="date" class="userCountdown" name="userCountdown" placeholder="date" required>
+      <button id="userCountdownButton" type="submit" class="btn btn-outline-dark">Create Countdown</button>
+
+    </form>
+<div id="displayUserCountdown"></div>
+</div>
+<div class="nameGreeting">
+      <form id="name">
+      <input type="text" class="name" name="name" placeholder="name" required>
+      <button id="name" type="submit" class="btn btn-outline-dark">Name</button>
+    </form>
+    <div id="displayName"></div>
+</div>
+
+    <h1>Pace Calculator</h1>
+
+      <form id="getPace">
+        <!-- <p>Distance: <input id="distance" required name="distance" type="decimal" placeholder="miles" class="distance"> miles -->
+      <p>Distance: <input id="distance" required name="distance" type="decimal" placeholder="miles" class="distance">
+          <div class="form-group">
+            <!-- <label for="distance">unit</label> -->
+            <select name="distanceUnit" class="form-control distance" id="distanceUnit" require>
+              <option placeholder=0 value='mile'>miles</option>
+              <option value='km'>km</option>
+            </select>
+          </div>
+        <!-- <select class="form-control">
+          <option>Miles</option>
+          <option>km</option>
+        </select>
+
+        <select class="form-control">
+          <option>5k</option>
+          <option>10k</option>
+          <option>Half Marathon</option>
+          <option>Marathon</option>
+        </select> -->
+
+        </p>
+        <br>
+        <p>Time:
+          <br>
+          <input id="hours" name="hours" required placeholder="hours "type="number" class="time"> :
+          <input id="minutes" name="minutes" required type="number" placeholder="minutes"> :
+          <input id="seconds" name="seconds" required type="number" placeholder="seconds">
+        </p>
+        <p><button id="pace" type="submit">Calculate Pace</button></p>
+        <div><input type="reset" value="Reset"></div>
+    	   <p id="displayPace"><p>
+
+
+      </form>
     </body>
 </html>
